@@ -80,13 +80,17 @@ button:focus {
     width: 30px;
 }
 
-.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
     background-color: var(--app-color-light);
     height: 2px;
     width: 30px;
 }
 
-.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner::before {
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before {
     background-color: var(--app-color-light);
 }
 
@@ -96,11 +100,13 @@ button:focus {
     --mm-max-size: 100%;
 }
 
-.mm-panel, .mm-panels {
+.mm-panel,
+.mm-panels {
     background: var(--app-color-background);
 }
 
-.mm-listitem__btn, .mm-listitem__text {
+.mm-listitem__btn,
+.mm-listitem__text {
     padding: 20px 0;
 }
 
@@ -110,32 +116,37 @@ button:focus {
 }
 
 .mm-wrapper__blocker {
-  background: transparent;
+    background: transparent;
 }
 
 .mm-wrapper--opened .mm-wrapper__blocker {
     opacity: 1;
 }
 
-.mm-listview > li {
-  position: relative; /* чтобы позиционировать стрелку */
+.mm-listview>li {
+    position: relative;
+    /* чтобы позиционировать стрелку */
 }
 
-.mm-listview > li > a::after {
-  content: "";
-  position: absolute;
-  right: 2px; /* отступ от правого края */
-  top: 50%;
-  transform: translateY(-50%); /* центрируем по вертикали */
-  width: 25px;
-  height: 25px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" stroke="%23999999" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>') no-repeat center center;
-  background-size: contain;
+.mm-listview>li>a::after {
+    content: "";
+    position: absolute;
+    right: 2px;
+    /* отступ от правого края */
+    top: 50%;
+    transform: translateY(-50%);
+    /* центрируем по вертикали */
+    width: 25px;
+    height: 25px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" stroke="%23999999" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>') no-repeat center center;
+    background-size: contain;
 }
+
 
 /* Если у пункта есть подменю (стандартная стрелка mmenu) */
 .mm-listitem__btn {
-  right: 10px; /* смещение */
+    right: 10px;
+    /* смещение */
 }
 
 /* ====== HEADER ====== */
@@ -168,4 +179,7 @@ button:focus {
     text-transform: uppercase;
 }
 
-
+.header__icons {
+    display: flex;
+    gap: var(--app-gutter);
+}
