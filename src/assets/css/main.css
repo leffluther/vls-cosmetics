@@ -78,6 +78,7 @@ button:focus {
 
 .hamburger-box {
     width: 30px;
+    display: block;
 }
 
 .hamburger-inner,
