@@ -143,7 +143,7 @@ function scripts() {
 }
 
 function images() {
-    return src(paths.src.images)
+    return src(paths.src.images, { encoding: false, buffer: false })
         .pipe(dest(paths.build.images))
         .pipe(browserSync.stream());
 }
