@@ -1,0 +1,21 @@
+:root {
+	/* ====== Шрифт ====== */
+	--app-default-font: "Roboto", sans-serif;
+	--app-second-font: "LTSuperior", sans-serif;
+	--app-heading-font: "Playfair", sans-serif;
+	--app-default-font-size: 16px;
+	--app-default-line-height: 1.64;
+
+	/* ====== Экран ====== */
+	--app-min-w: 320px;
+	--app-max-w: 1440px;
+	--app-gutter: 15px;
+
+	/* ====== Цвет ====== */
+	--app-color-primary: #3F67AA;
+	--app-color-background: #F5F6F5;
+	--app-color-light: #FFFFFF;
+	--app-color-dark: #000000;
+	--app-color-gray: #999999;
+	--app-color-light-gray: #D1D1D1;
+}

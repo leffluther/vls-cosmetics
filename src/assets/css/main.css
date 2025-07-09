@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/roboto/roboto-400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/roboto/roboto-500.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LTSuperior";
+    src: url("/fonts/lt-suoerior/lt-superior-400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url("/fonts/playfair/playfair-display-400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    min-width: var(--app-min-w);
+    height: 100%;
+    font-family: var(--app-default-font);
+    font-weight: 400;
+    font-size: var(--app-default-font-size);
+    line-height: var(--app-default-line-height);
+    color: var(--app-color-dark);
+    background-color: var(--app-color-background);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button:focus {
+    outline: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: var(--app-max-w);
+    margin: 0 auto;
+    padding: 0 var(--app-gutter);
+}
+
+.wrapper-contain {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--app-gutter);
+}
+
+/* ====== HAMBURGER ====== */
+.hamburger {
+    padding: 0;
+}
+
+.hamburger-box {
+    width: 30px;
+}
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+    background-color: var(--app-color-light);
+    height: 2px;
+    width: 30px;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner::before {
+    background-color: var(--app-color-light);
+}
+
+/* ====== MOBILE MENU ====== */
+:root {
+    --mm-size: calc(100% - 90px);
+    --mm-max-size: 100%;
+}
+
+.mm-panel, .mm-panels {
+    background: var(--app-color-background);
+}
+
+.mm-listitem__btn, .mm-listitem__text {
+    padding: 20px 0;
+}
+
+.mm-listitem::after {
+    left: 0;
+    border-color: var(--app-color-light-gray);
+}
+
+.mm-wrapper__blocker {
+  background: transparent;
+}
+
+.mm-wrapper--opened .mm-wrapper__blocker {
+    opacity: 1;
+}
+
+.mm-listview > li {
+  position: relative; /* чтобы позиционировать стрелку */
+}
+
+.mm-listview > li > a::after {
+  content: "";
+  position: absolute;
+  right: 2px; /* отступ от правого края */
+  top: 50%;
+  transform: translateY(-50%); /* центрируем по вертикали */
+  width: 25px;
+  height: 25px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" stroke="%23999999" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>') no-repeat center center;
+  background-size: contain;
+}
+
+/* Если у пункта есть подменю (стандартная стрелка mmenu) */
+.mm-listitem__btn {
+  right: 10px; /* смещение */
+}
+
+/* ====== HEADER ====== */
+.header {
+    display: flex;
+    align-items: flex-end;
+    height: 90px;
+    padding-bottom: 15px;
+    background-color: var(--app-color-primary);
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header__menu {
+    display: none;
+}
+
+.header__menu .menu__item {
+    list-style-type: none;
+}
+
+.header__menu .menu__link {
+    font-family: var(--app-second-font);
+    color: var(--app-color-light);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
