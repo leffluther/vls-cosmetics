@@ -4,7 +4,7 @@
 	--app-second-font: "LTSuperior", sans-serif;
 	--app-heading-font: "Playfair", sans-serif;
 	--app-default-font-size: 16px;
-	--app-default-line-height: 1.64;
+	--app-default-line-height: 1.4;
 
 	/* ====== Экран ====== */
 	--app-min-w: 320px;
@@ -18,4 +18,5 @@
 	--app-color-dark: #000000;
 	--app-color-gray: #999999;
 	--app-color-light-gray: #D1D1D1;
+	--app-color-dark-gray: #9E9E9E;
 }

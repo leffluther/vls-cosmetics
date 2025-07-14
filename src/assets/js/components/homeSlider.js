@@ -1,3 +1,12 @@
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+
 export default function homeSlider() {
-    console.log('Hello World!');
+    new Swiper('.home-banner__swiper', {
+        modules: [Navigation, Pagination],
+
+        pagination: {
+            el: '.home-banner__pagination'
+        }
+    });
 }
