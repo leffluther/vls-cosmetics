@@ -3,3 +3,9 @@
 @import "hamburgers/dist/hamburgers.css";
 
 @import "mmenu-js/dist/mmenu.css";
+
+@import "swiper/swiper.css";
+
+@import "swiper/modules/navigation.css";
+
+@import "swiper/modules/pagination.css";

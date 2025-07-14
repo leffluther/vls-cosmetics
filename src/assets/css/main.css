@@ -1,5 +1,12 @@
 @font-face {
     font-family: "Roboto";
+    src: url("/fonts/roboto/roboto-300.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
     src: url("/fonts/roboto/roboto-400.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
@@ -26,12 +33,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Medino";
+    src: url("/fonts/medino/medino-400.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     position: relative;
     min-width: var(--app-min-w);
     height: 100%;
     font-family: var(--app-default-font);
-    font-weight: 400;
+    font-weight: 300;
     font-size: var(--app-default-font-size);
     line-height: var(--app-default-line-height);
     color: var(--app-color-dark);
@@ -178,6 +192,7 @@ button:focus {
     color: var(--app-color-light);
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 .header__icons {
