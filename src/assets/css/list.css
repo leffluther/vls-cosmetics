@@ -1,0 +1,129 @@
+/* ====== Section-catalog ====== */
+*
+.container
+{
+    margin: 0 auto;
+    padding: 0 22px;
+}
+.section-catalog__list
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.section-catalog__card
+{
+    width: 150px;
+}
+
+.section-catalog__h3
+{
+    font-family: 'Medino', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    color: #000;
+    margin-bottom: var(--app-gutter);
+}
+
+.section-catalog__swiper
+{
+    margin-bottom: 15px;
+}
+.section-catalog__slide
+{
+    position: relative;
+    height: 172px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--app-color-light)
+}
+.section-catalog__pagination .swiper-pagination-bullet-active {
+    background: var(--app-color-dark-gray);
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+}
+
+.section-catalog__pagination .swiper-pagination-bullet {
+    background: var(--app-color-light-gray);
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+}
+
+.section-catalog__favorites
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    transition: 0.3s;
+
+}
+
+.section-catalog__model
+{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.section-catalog__price
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #696969;
+    margin-bottom: 15px;
+}
+
+.section-catalog__button-basket
+{
+    border: 1.50px solid #a2a2a2;
+    padding: 8px 12px;
+    width: 121px;
+    height: 40px;
+}
+
+.section-catalog__button-catalog
+{
+    padding: 13px 129px;
+
+    background: #3f67aa;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #fff;
+    border: none;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.section-catalog__button-link
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a button
+{
+    padding: 8px 12px;
+    width: 148px;
+    height: 38px;
+    background: #3f67aa;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #fff;
+}

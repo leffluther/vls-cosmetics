@@ -7,7 +7,8 @@
     height: 100%;
 }
 
-.home-banner__slide {
+.home-banner__slide
+{
     display: flex;
     align-items: center;
     justify-content: center;
