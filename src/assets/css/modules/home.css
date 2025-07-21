@@ -44,3 +44,8 @@
 .home-banner__pagination.swiper-pagination {
     bottom: 30px;
 }
+
+/* ====== HOME-CATALOG ====== */
+.home-catalog__button {
+    margin-bottom: 20px;
+}

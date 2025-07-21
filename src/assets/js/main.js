@@ -2,11 +2,13 @@ import ready from './utils/documentReady';
 import homeSlider from "./components/homeSlider";
 import callbackModal from './components/callbackModal';
 import mmenu from './components/mmenu';
-import listSlider from './components/listSlider';
+import catalogSlider from './components/catalogSlider';
+import worthSlider from './components/worthSlider';
 
 ready(() => {
-    homeSlider()
-    callbackModal()
     mmenu()
-    listSlider()
+    callbackModal()
+    homeSlider()
+    catalogSlider()
+    worthSlider()
 })

@@ -66,6 +66,27 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+.button {
+    display: block;
+    padding: 5px 25px;
+    text-align: center;
+    background: var(--app-color-primary);
+    color: var(--app-color-light);
+    font-weight: 400;
+    text-decoration: none;
+    transition: var(--app-default-transition);
+}
+
+.button--contain {
+    width: 100%;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: var(--app-color-light);
 }
 
 button:focus {
@@ -83,6 +104,24 @@ button:focus {
     width: 100%;
     margin: 0 auto;
     padding: 0 var(--app-gutter);
+}
+
+.section {
+    padding-top: 40px;
+}
+
+/* ====== LITERAL ====== */
+
+.heading {
+    font-family: var(--app-heading-font);
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.desc {
+    font-weight: 400;
+    font-size: 18px;
 }
 
 /* ====== HAMBURGER ====== */

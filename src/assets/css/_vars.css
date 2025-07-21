@@ -6,6 +6,9 @@
 	--app-default-font-size: 16px;
 	--app-default-line-height: 1.4;
 
+	/* ====== Анимация ====== */
+	--app-default-transition: all .25s ease;
+
 	/* ====== Экран ====== */
 	--app-min-w: 320px;
 	--app-max-w: 1440px;
