@@ -1,0 +1,37 @@
+*
+.worth__button
+{
+	border: 1px solid var(--app-color-dark-gray);
+	padding: 7px 45px;
+	background: transparent;
+	transition: var(--app-default-transition);
+    margin-bottom: 20px;
+}
+
+.worth__img
+{
+    height: 376px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.worth__pagination .swiper-pagination-bullet-active {
+    background: var(--app-color-dark-gray);
+}
+
+.worth__pagination .swiper-pagination-bullet {
+    background: var(--app-color-light-gray);
+    width: 8px;
+    height: 8px;
+}
+
+.worth__pagination.swiper-pagination
+{
+    bottom: 5px;
+}
+
+.home-worth__button
+{
+    border: none;
+    margin-bottom: 60px;
+}

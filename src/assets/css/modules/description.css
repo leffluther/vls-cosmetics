@@ -1,0 +1,53 @@
+/* ====== Description ====== */
+*
+.home-descrioption .box
+{
+    position: relative;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000;
+}
+
+.home-descrioption__label
+{
+    position: relative;
+    padding: 20px;
+    top: 50%;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    cursor: pointer;
+}
+
+.box .home-descrioption__label::after
+{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    color: #a2a2a2;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.box.active .home-descrioption__label::after
+{
+    content: "\2014";
+}
+
+.home-descrioption__content
+{
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: 1s;
+}
+
+.description__img
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+}

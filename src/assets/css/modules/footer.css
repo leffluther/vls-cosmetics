@@ -1,0 +1,27 @@
+/* ====== Footer ====== */
+*
+.footer__contact
+{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000;
+}
+
+.footer__link
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 70px;
+}
+
+.footer__link a
+{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #000;
+}

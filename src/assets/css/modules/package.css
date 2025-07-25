@@ -1,0 +1,17 @@
+/* ====== Package ====== */
+*
+.home-package
+{
+    margin-bottom: 64px;
+}
+.package__img
+{
+    margin-bottom: 25px;
+    width: 100%;
+}
+.package__a
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
