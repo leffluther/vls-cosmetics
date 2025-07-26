@@ -7,10 +7,11 @@ boxes.forEach((box) => {
 function boxHandler(e) {
     e.preventDefault();
     let currentBox = e.target.closest(".box");
-    let currentContent = e.target.nextElementSibling;
-    currentBox.classlist.toggle("active");
-    if (currentBox.classlist.conains("active")) {
-        currentContent.style.maxHeight = currentContent + "px";
+    let currentContent = currentBox.querySelector('.home-description__content');
+    if (!currentBox || !currentContent) return;
+    currentBox.classList.toggle("active");
+    if (currentBox.classList.contains("active")) {
+        currentContent.style.maxHeight = currentContent.scrollHeight + "px";
     } else {
         currentContent.style.maxHeight = 0;
     }
