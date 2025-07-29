@@ -73,18 +73,28 @@ img {
     display: block;
     padding: 5px 25px;
     text-align: center;
-    background: var(--app-color-primary);
-    color: var(--app-color-light);
     font-weight: 400;
+    cursor: pointer;
     text-decoration: none;
     transition: var(--app-default-transition);
+}
+
+.button--primary {
+    background: var(--app-color-primary);
+    color: var(--app-color-light);
+}
+
+.button--secondary {
+    border: 1px solid var(--app-color-dark-gray);
+    background: transparent;
+    color: var(--app-color-dark);
 }
 
 .button--contain {
     width: 100%;
 }
 
-.button:hover {
+.button--primary:hover {
     text-decoration: none;
     color: var(--app-color-light);
 }
@@ -119,6 +129,12 @@ button:focus {
     text-transform: uppercase;
     margin-bottom: 25px;
 }
+
+.subheading {
+    font-size: 20px;
+    font-weight: 400;
+}
+
 .desc {
     font-weight: 400;
     font-size: 18px;
@@ -237,4 +253,69 @@ button:focus {
 .header__icons {
     display: flex;
     gap: var(--app-gutter);
+}
+
+/* ====== FOOTER ====== */
+
+.footer {
+    padding-top: 60px;
+}
+.footer__content {
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.footer__contact {
+    margin-bottom: var(--app-gutter);
+    font-size: 18px;
+}
+
+.footer__contact-title {
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer__contact-link {
+    color: var(--app-color-dark);
+}
+
+.footer__contact-link:hover {
+    color: var(--app-color-dark);
+}
+
+.footer__menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+
+.footer__item {
+    padding: 7px 0;
+}
+
+.footer__link {
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: underline;
+    color: var(--app-color-dark);
+    transition: var(--app-default-transition);
+    text-decoration: none;
+    border-bottom: 1px solid var(--app-color-dark);
+}
+
+.footer__link:hover {
+    color: var(--app-color-primary);
+    text-decoration: none;
+    border-bottom-color: var(--app-color-primary);
 }

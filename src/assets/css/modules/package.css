@@ -1,17 +1,13 @@
-/* ====== Package ====== */
-*
-.home-package
-{
-    margin-bottom: 64px;
-}
+/* ====== PACKAGE ====== */
 .package__img
 {
-    margin-bottom: 25px;
     width: 100%;
+    margin: 0 auto;
 }
-.package__a
-{
+
+.package__links {
     display: flex;
+    margin-top: 25px;
     flex-direction: column;
-    gap: 15px;
+    gap: var(--app-gutter);
 }
