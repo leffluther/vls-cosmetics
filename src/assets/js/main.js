@@ -5,6 +5,7 @@ import callbackModal from './components/callbackModal';
 import mmenu from './components/mmenu';
 import catalogSlider from './components/catalogSlider';
 import worthSlider from './components/worthSlider';
+import delivery from './components/delivery';
 
 ready(() => {
     custom()
@@ -13,4 +14,5 @@ ready(() => {
     homeSlider()
     catalogSlider()
     worthSlider()
+    delivery()
 })
