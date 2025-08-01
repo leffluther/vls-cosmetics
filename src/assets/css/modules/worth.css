@@ -23,10 +23,8 @@
 
 .worth__img {
     width: 100%;
-    max-width: 500px;
+    margin: 0 auto;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .worth__pagination .swiper-pagination-bullet-active {
