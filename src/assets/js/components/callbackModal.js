@@ -1,5 +1,5 @@
 import MicroModal from "micromodal";
-    
+
 export default function callbackModal() {
     MicroModal.init({
         openTrigger: 'data-modal-open',

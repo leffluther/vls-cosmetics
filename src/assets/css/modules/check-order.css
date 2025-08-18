@@ -1,0 +1,28 @@
+.home-delivery__title
+{
+    border-bottom: 1px solid var(--app-color-light-gray);
+    display: flex;
+}
+.check-option
+{
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid var(--app-color-light-gray);
+}
+
+.check-option__content
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000;
+}
+
+.check__links {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: var(--app-gutter);
+}

@@ -7,7 +7,8 @@
     height: 100%;
 }
 
-.home-banner__slide {
+.home-banner__slide
+{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,4 +43,9 @@
 
 .home-banner__pagination.swiper-pagination {
     bottom: 30px;
+}
+
+/* ====== HOME-CATALOG ====== */
+.home-catalog__button {
+    margin-bottom: 20px;
 }

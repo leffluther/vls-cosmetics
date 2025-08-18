@@ -1,0 +1,102 @@
+/* ====== FAQ ====== */
+.faq__boxes {
+    margin-bottom: 25px;
+}
+
+.faq__box {
+    position: relative;
+}
+
+.faq__box::before,
+.faq__box::after {
+    content: "";
+    position: absolute;
+    background-color: var(--app-color-gray);
+    width: 25px;
+    height: 1px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faq__box::before {
+    transform: rotate(90deg);
+}
+
+.faq__box::after {
+}
+
+.faq__box.faq__box--active::before {
+    transform: rotate(0);
+    opacity: 0;
+}
+
+.faq__label {
+    position: relative;
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--app-color-light-gray);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.faq__label::before {
+    content: attr(data-index);
+    margin-right: 10px;
+    font-size: 18px;
+    color: var(--app-color-gray)
+}
+
+
+.faq__boxes .faq__box:first-child .faq__label {
+    border-top: 1px solid var(--app-color-light-gray);
+}
+
+.faq__desc {
+    max-height: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    transition: var(--app-default-transition);
+}
+
+.faq__img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home-description .box span {
+    padding-right: 23px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    left: 40px;
+}
+
+.box .home-description__label::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    color: #a2a2a2;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.box.active .home-description__label::after {
+    content: "\2014";
+}
+
+.home-description__content {
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: 1s;
+}
+
+.description__img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+}

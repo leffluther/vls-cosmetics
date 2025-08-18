@@ -1,0 +1,13 @@
+/* ====== PACKAGE ====== */
+.package__img
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.package__links {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: var(--app-gutter);
+}

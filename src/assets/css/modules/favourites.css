@@ -1,0 +1,43 @@
+.home-favourites__title
+{
+    border-bottom: 1px solid var(--app-color-light-gray);
+    margin-bottom: 26px;
+}
+.home-favourites__title h2
+{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #000
+}
+
+.home-favourites__product-card
+{
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid var(--app-color-light-gray);
+    margin-bottom: 25px;
+}
+
+.favourites__links
+{
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: var(--app-gutter);
+}
+
+.favourites__button
+{
+    display: block;
+    padding: 5px 25px;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--app-default-transition);
+    width: 100%;
+    background-color: white;
+    color: #000;
+}

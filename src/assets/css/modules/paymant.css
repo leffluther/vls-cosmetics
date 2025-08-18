@@ -1,0 +1,79 @@
+.home-paymant__title
+{
+    border-bottom: 1px solid var(--app-color-light-gray);
+    margin-bottom: 26px;
+    display: flex;
+    gap: 5px;
+}
+
+.paymant-option
+{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid var(--app-color-light-gray);
+}
+
+.paymant-option__content
+{
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000;
+}
+
+.paymant-option__button
+{
+    position: absolute;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.paymant__links
+{
+    margin-top: 22px;
+}
+
+.paymant-agreement
+{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.paymant-option__newsletter
+{
+    position: absolute;
+    left: 22px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #a2a2a2;
+    width: 275px;
+    margin-top: 25px;
+}
+
+.paymant-option__sub
+{
+    position: absolute;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+}

@@ -62,10 +62,68 @@ h6 {
     margin-bottom: 0;
 }
 
+.h2--secondary
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 21px;
+}
+
+.span--secondary
+{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #a2a2a2;
+}
+
+.p--primary
+{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000;
+    margin-bottom: 23px;
+}
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+.button {
+    display: block;
+    padding: 5px 25px;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--app-default-transition);
+}
+
+.button--primary {
+    background: var(--app-color-primary);
+    color: var(--app-color-light);
+}
+
+.button--secondary {
+    border: 1px solid var(--app-color-dark-gray);
+    background: transparent;
+    color: var(--app-color-dark);
+}
+
+.button--contain {
+    width: 100%;
+}
+
+.button--primary:hover {
+    text-decoration: none;
+    color: var(--app-color-light);
 }
 
 button:focus {
@@ -83,6 +141,30 @@ button:focus {
     width: 100%;
     margin: 0 auto;
     padding: 0 var(--app-gutter);
+}
+
+.section {
+    padding-top: 40px;
+}
+
+/* ====== LITERAL ====== */
+
+.heading {
+    font-family: var(--app-heading-font);
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.subheading {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.desc {
+    font-weight: 400;
+    font-size: 18px;
 }
 
 /* ====== HAMBURGER ====== */
@@ -198,4 +280,69 @@ button:focus {
 .header__icons {
     display: flex;
     gap: var(--app-gutter);
+}
+
+/* ====== FOOTER ====== */
+
+.footer {
+    padding-top: 60px;
+}
+.footer__content {
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.footer__contact {
+    margin-bottom: var(--app-gutter);
+    font-size: 18px;
+}
+
+.footer__contact-title {
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer__contact-link {
+    color: var(--app-color-dark);
+}
+
+.footer__contact-link:hover {
+    color: var(--app-color-dark);
+}
+
+.footer__menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+
+.footer__item {
+    padding: 7px 0;
+}
+
+.footer__link {
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: underline;
+    color: var(--app-color-dark);
+    transition: var(--app-default-transition);
+    text-decoration: none;
+    border-bottom: 1px solid var(--app-color-dark);
+}
+
+.footer__link:hover {
+    color: var(--app-color-primary);
+    text-decoration: none;
+    border-bottom-color: var(--app-color-primary);
 }
